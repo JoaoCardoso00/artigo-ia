@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from "react"
+import React, { RefObject, useEffect, useRef, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { ArrowUp, Info, Loader2, Mic, Paperclip, Square, X } from "lucide-react"
 import { omit } from "remeda"
@@ -172,7 +172,7 @@ export function MessageInput({
     props.allowAttachments && props.files && props.files.length > 0
 
   useAutosizeTextArea({
-    ref: textAreaRef,
+    ref: textAreaRef as RefObject<HTMLTextAreaElement>,
     maxHeight: 240,
     borderWidth: 1,
     dependencies: [props.value, showFileList],
