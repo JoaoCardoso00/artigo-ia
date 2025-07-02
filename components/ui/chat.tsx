@@ -95,7 +95,7 @@ export function Chat({
               ...toolInvocation,
               state: "result",
               result: {
-                content: "Tool execution was cancelled",
+                content: "A execução da ferramenta foi cancelada",
                 __cancelled: true, // Special marker to indicate cancellation
               },
             } as const
@@ -126,7 +126,7 @@ export function Chat({
               ...part.toolInvocation,
               state: "result",
               result: {
-                content: "Tool execution was cancelled",
+                content: "A execução da ferramenta foi cancelada",
                 __cancelled: true,
               },
             },
@@ -161,7 +161,7 @@ export function Chat({
           <div className="border-r pr-1">
             <CopyButton
               content={message.content}
-              copyMessage="Copied response to clipboard!"
+              copyMessage="Resposta copiada para a área de transferência!"
             />
           </div>
           <Button
@@ -184,7 +184,7 @@ export function Chat({
       ) : (
         <CopyButton
           content={message.content}
-          copyMessage="Copied response to clipboard!"
+          copyMessage="Resposta copiada para a área de transferência!"
         />
       ),
     }),
@@ -195,7 +195,7 @@ export function Chat({
     <ChatContainer className={className}>
       {isEmpty && append && suggestions ? (
         <PromptSuggestions
-          label="Try these prompts ✨"
+          label="Tente estas sugestões ✨"
           append={append}
           suggestions={suggestions}
         />

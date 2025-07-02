@@ -1,9 +1,7 @@
 "use client"
 
-import { useState } from "react"
 import { useChat, type UseChatOptions } from "@ai-sdk/react"
 import { FileText, Sparkles, Zap, BookOpen, Search, Globe } from "lucide-react"
-import { cn } from "@/lib/utils"
 import { transcribeAudio } from "@/lib/audio-utils"
 import { Chat } from "@/components/ui/chat"
 import { Button } from "@/components/ui/button"
@@ -133,19 +131,11 @@ export default function LandingPage(props: LandingPageProps) {
 
             {/* Right Side - Chat */}
             <div className="space-y-4">
-              <div className="text-center lg:text-left">
-                <h2 className="text-2xl font-bold text-foreground mb-2">
-                  Comece agora mesmo
-                </h2>
-                <p className="text-muted-foreground">
-                  Descreva seu trabalho e nossa IA fará toda a pesquisa e formatação para você
-                </p>
-              </div>
 
               <div className="rounded-2xl border bg-background shadow-lg">
                 <div className="p-4">
                   <Chat
-                    className="h-[400px]"
+                    className="h-[450px]"
                     messages={messages}
                     handleSubmit={handleSubmit}
                     input={input}
