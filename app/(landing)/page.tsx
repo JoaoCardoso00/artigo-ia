@@ -1,6 +1,7 @@
 "use client"
 
 import { useChat, type UseChatOptions } from "@ai-sdk/react"
+import Link from "next/link"
 import { FileText, Sparkles, Zap, BookOpen, Search, Globe } from "lucide-react"
 import { transcribeAudio } from "@/lib/audio-utils"
 import { Chat } from "@/components/ui/chat"
@@ -31,35 +32,10 @@ export default function LandingPage(props: LandingPageProps) {
   const isLoading = status === "submitted" || status === "streaming"
 
   return (
-    <div className="h-screen bg-background flex flex-col max-w-7xl mx-auto">
-      {/* Navbar */}
-      <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex-shrink-0">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
-            <div className="flex items-center gap-4">
-              <div className="flex items-center space-x-2">
-                <FileText className="h-8 w-8 text-primary" />
-                <span className="text-xl font-bold">Artigo IA</span>
-              </div>
-              <Button variant="ghost" size="sm">
-                Como funciona
-              </Button>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Button variant="outline" size="sm">
-                Entrar
-              </Button>
-              <Button size="sm">
-                Começar grátis
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
+    <div className="bg-background flex flex-col mx-auto pt-32">
       {/* Main Content */}
       <main className="flex-1 flex items-center justify-center">
-        <div className="w-full max-w-6xl">
+        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Hero Content */}
             <div className="space-y-8">
