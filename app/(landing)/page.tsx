@@ -81,21 +81,6 @@ export default function LandingPage() {
                   <span className="text-sm font-medium text-foreground">TCC, artigos, monografias</span>
                 </div>
               </div>
-
-              <div className="flex space-x-8">
-                <div>
-                  <div className="text-2xl font-bold text-foreground">10k+</div>
-                  <div className="text-sm text-muted-foreground">Usuários</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-foreground">50k+</div>
-                  <div className="text-sm text-muted-foreground">Trabalhos</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-foreground">99.9%</div>
-                  <div className="text-sm text-muted-foreground">Uptime</div>
-                </div>
-              </div>
             </div>
 
             {/* Right Side - Chat */}

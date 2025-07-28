@@ -11,7 +11,7 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center space-x-2">
-              <FileText className="h-8 w-8 text-primary" />
+              <FileText className="h-6 w-6 text-primary" />
               <span className="text-xl font-bold">Artigo IA</span>
             </Link>
             <div>
@@ -28,10 +28,10 @@ export function Navbar() {
           </div>
           <div className="flex items-center space-x-4">
             <Button variant="outline" size="sm">
-              Entrar
+              <Link href="/login">Entrar</Link>
             </Button>
             <Button size="sm">
-              Começar grátis
+              <Link href="/register">Comece gratuitamente</Link>
             </Button>
           </div>
         </div>
