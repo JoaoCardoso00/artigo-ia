@@ -1,17 +1,11 @@
 "use client"
 
-import { useChat, type UseChatOptions } from "@ai-sdk/react"
-import Link from "next/link"
 import { FileText, Sparkles, Zap, BookOpen, Search, Globe } from "lucide-react"
+import { useChat } from "@ai-sdk/react"
 import { transcribeAudio } from "@/lib/audio-utils"
 import { Chat } from "@/components/ui/chat"
-import { Button } from "@/components/ui/button"
 
-interface LandingPageProps {
-  initialMessages?: UseChatOptions["initialMessages"]
-}
-
-export default function LandingPage(props: LandingPageProps) {
+export default function LandingPage() {
   const {
     messages,
     input,
@@ -22,7 +16,6 @@ export default function LandingPage(props: LandingPageProps) {
     status,
     setMessages,
   } = useChat({
-    ...props,
     api: "/api/chat",
     body: {
       model: "llama-3.3-70b-versatile",
@@ -107,7 +100,6 @@ export default function LandingPage(props: LandingPageProps) {
 
             {/* Right Side - Chat */}
             <div className="space-y-4">
-
               <div className="rounded-2xl border bg-background shadow-lg">
                 <div className="p-4">
                   <Chat
