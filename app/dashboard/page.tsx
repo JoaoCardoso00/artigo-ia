@@ -86,7 +86,7 @@ function DashboardContent() {
   } = useChat({
     api: "/api/chat",
     body: {
-      model: "llama-3.3-70b-versatile",
+      model: "gemini-1.5-pro",
     },
   })
 
@@ -244,9 +244,10 @@ function DashboardContent() {
                 setMessages={setMessages}
                 transcribeAudio={transcribeAudio}
                 suggestions={[
-                  "Preciso de ajuda para estruturar meu TCC sobre sustentabilidade empresarial",
-                  "Como fazer uma revisão bibliográfica eficiente?",
-                  "Quais são as melhores práticas para metodologia de pesquisa?",
+                  "Preciso de artigos científicos recentes sobre sustentabilidade empresarial para meu TCC",
+                  "Busque informações atuais sobre inteligência artificial na educação",
+                  "Encontre pesquisas acadêmicas sobre metodologias ágeis em desenvolvimento de software",
+                  "Quais são as tendências atuais em tecnologia educacional?",
                 ]}
               />
             </div>
