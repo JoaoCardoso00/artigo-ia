@@ -1,7 +1,7 @@
 
 export default function PricingPage() {
   return (
-    <div className="container mx-auto px-4 pt-28">
+    <div className="container mx-auto px-4 pt-16">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">Nossos Planos</h1>
         <p className="text-lg text-muted-foreground">

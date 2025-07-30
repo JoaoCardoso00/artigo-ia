@@ -6,7 +6,7 @@ import { createSupabaseServerActionClient } from "@/lib/supabase-server";
 
 export async function signInWithEmail(email: string) {
   const supabase = await createSupabaseServerActionClient();
-  
+
   const { error } = await supabase.auth.signInWithOtp({
     email,
     options: {
@@ -28,7 +28,7 @@ export async function signInWithEmail(email: string) {
 
 export async function signInWithGoogle() {
   const supabase = await createSupabaseServerActionClient();
-  
+
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
     options: {
