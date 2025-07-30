@@ -244,10 +244,10 @@ function DashboardContent() {
                 setMessages={setMessages}
                 transcribeAudio={transcribeAudio}
                 suggestions={[
+                  "Faça um artigo simples sobre o uso de banco de dados relacionais no contexto de modelos de linguagem (LLMs)",
                   "Preciso de artigos científicos recentes sobre sustentabilidade empresarial para meu TCC",
-                  "Busque informações atuais sobre inteligência artificial na educação",
-                  "Encontre pesquisas acadêmicas sobre metodologias ágeis em desenvolvimento de software",
-                  "Quais são as tendências atuais em tecnologia educacional?",
+                  "Crie um documento ABNT sobre metodologias ágeis em desenvolvimento de software",
+                  "Gere um artigo acadêmico sobre inteligência artificial na educação com referências",
                 ]}
               />
             </div>
